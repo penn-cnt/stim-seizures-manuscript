@@ -52,7 +52,8 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
   ```r
   install.packages(c("lme4","lmerTest","pbkrtest","dplyr","emmeans","multcomp","car","nlme","jsonlite"))
   ```
-- Download data checkpoints from (link here soon!) 
+- Download data checkpoints from (link here soon!)
+
 - Update config.py
     - usr - *ieeg.org username*
     - passpath - *Path to ieeg.org login binary password file*
@@ -63,35 +64,43 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
 - Run config.py
     - This creates a r_config.json file for path information in the statistical analysis scripts
 - Run the following scripts/notebooks to generate the figures/analyses/statistics in the manuscript from intermediate data checkpoints
+    - metadata_notebook.ipynb
     - annotation_analysis_and_consensus.ipynb
+        - Figure S2A
+        - Figure S2B
+    - seizure_plotting_sandbox.ipynb
+        - Figure 1D,E
+        - Figure 2A,B
+        - Figure 3A
+        - Figure 6A
+    - tuning_model_thresholds.ipynb
+        - Figure 2Bii-E
+        - plot_thresholds_for_lme.csv
+        - model-interrater_agreement.csv
+        - stim_vs_spont_agreements_for_lme.csv
+    - lme_model_anaysis.R
+    - model_prediction_analysis.ipynb
+        - Figure 3B-D
+        - Figure 4A-C
+        - Figure 5A-C
+        - Figure 6B,C
+        - Figure S3A-D
+        - Figure S4A,B
+        - Figure 7C,D
+        - recruitment_df_total.csv
+        - recruitment_df_onset.csv
+        - recruitment_df_spread.csv
+        - time_df_all.csv
+        - spread_df_all.csv
+        - null_df_all.csv
+        - modeling_df.csv
+    - lme_recruitment_analysis.R
+    - lme_semiology_mtle_analysis.R
+    - lme_spont_spread_analysis.R
+    - stim_seizure_preprocessing_sandbox.ipynb
+        - *Requires raw data in BIDS format to regenerate figures*
+        - Figure S1A-D
+        - Figure 1C
 
-          
 ## Data
-all raw EEG data is publically available on iEEG.org and will be uploaded in BIDS format as a publcially available dataset on pennsive.io upon publication. The script BIDS_seizure_saving.py contains code used to save the raw EEG data into BIDS format from ieeg.org.
-
-## Analysis pipeline
-* annotation_analysis_and_consensys.ipynb
-notebook to generate consensus thresholds and perform seizure similarity analysis (Figure SX). Run this first to generate threshold_tuning_consensus_v2.pkl, which contains the consensus annotations for each annotated seizure.
-* BIDS_seizure_saving.py
-script to pull seizure data from iEEG.org and save it in iEEG-BIDS format using mne python. Saves all seizures in seizure_information-LF that are spontaneous (stim == 0) or low-frequency stim-induced (stim == 1)
-* BIDS_interictal_saving.py
-script to pull the designated interictal data from iEEG.org and save it in iEEG-BIDS format using mne python. Saves all interictal clips as designated in the config, one for each patient.
-* seizure_detection_pretrain.py
-script to generate seizure detection values for each spontaneous and stimulation induced seizure using the NDD model and two benchmarks: Absolute slope, and a wavenet-based univariate seizure detector.
-* val_generate_model_annotations.py
-script to generate ueo channel and 10 second spread channel annotations for each seizure that had human annotations at each threshold in a parameter sweep.
-* val_threshold_sweep_merging.py
-script for merging human annotations and model annotations at each of the swept thresholds
-* tuning_model_thresholds.ipynb
-notebook containing code to visualize model performances and compare them to model performances
-* lme_model_analysis.R
-* val_generate_optimized_model_annotations.py
-* model_prediction_analysis_cursor.ipynb
-* lme_recruitment_analysis.R
-* lme_semiology_mtle_analysis.R
-* lme_spont_spread_analysis.R
-* utils
-    * utils.py
-    * stim_seizure_preprocessing_utils.py
-* visualizations
-    * end2end_sandbox.ipynb
+All raw EEG data is publically available on iEEG.org and will be uploaded in BIDS format as a publcially available dataset on pennsive.io upon publication. The script BIDS_seizure_saving.py contains code used to save the raw EEG data into BIDS format from ieeg.org. Seizure start and end times are available in the public data respository.
