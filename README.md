@@ -1,6 +1,6 @@
 # stim-seizures
 ## ⚡️ Can electrical stimulation replace spontaneous seizures?
-<img src="https://github.com/wojemann/stim-seizures/blob/stim_paper/cover_fig.png" width="750">
+<img src="https://github.com/wojemann/stim-seizures-manuscript/blob/stim_paper/cover_fig.png" width="750">
 
 ### 👨‍🍳 Authors
 William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Petillo [1,5], Mariam Josyula [1,5], Alexander Daum [6], Daniel J. Zhou [1,5], Joshua LaRocque [1,5,7], Jacob Korzun [5], Catherine V. Kulick-Soper [5], Eli J. Cornblath [1,5], Sarita Damaraju [1,8], Russell T. Shinohara [9,10], Eric D. Marsh [3], Kathryn A. Davis [1,2,5], Brian Litt [1,2,5], Erin C. Conrad [1,5]
