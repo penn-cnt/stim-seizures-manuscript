@@ -46,7 +46,7 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
   source stim-env/bin/activate
   pip install --upgrade pip
   pip install -r requirements.txt
-  pip install git@github.com:ieeg-portal/ieegpy.git  # if not already present in your env
+  pip install git+https://github.com/ieeg-portal/ieegpy.git  # if not already present in your env
   ```
 - Install R dependencies (one-time):
   ```r
