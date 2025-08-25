@@ -74,7 +74,7 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
         - Figure 3A
         - Figure 6A
     - tuning_model_thresholds.ipynb
-        - Figure 2Bii-E
+        - Figure 2B-E
         - plot_thresholds_for_lme.csv
         - model-interrater_agreement.csv
         - stim_vs_spont_agreements_for_lme.csv
