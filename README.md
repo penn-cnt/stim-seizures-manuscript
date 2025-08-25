@@ -65,6 +65,9 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
     - This creates r_config.json file for path information in the statistical analysis scripts
 - Run the following scripts/notebooks to generate the figures/analyses/statistics in the manuscript from intermediate data checkpoints
     - metadata_notebook.ipynb
+        - Figure 7A,B
+        - Figure S5
+        - Figure S6
     - annotation_analysis_and_consensus.ipynb
         - Figure S2A
         - Figure S2B
