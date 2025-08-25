@@ -50,7 +50,7 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
   ```
 - Install R dependencies (one-time):
   ```r
-  install.packages(c("lme4","lmerTest","pbkrtest","dplyr","emmeans","multcomp","car","nlme"))
+  install.packages(c("lme4","lmerTest","pbkrtest","dplyr","emmeans","multcomp","car","nlme","jsonlite"))
   ```
 - Download data checkpoints from (link here soon!) 
 - Update config.py
@@ -60,10 +60,10 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
     - PROCESSED_DATA - *Path to processed data checkpoints, required*
     - METADATA - *Path to patient and seizure metadata, required*
     - figures - *Path to saved figures, required*
-- Run quickstart.sh
-  ```bash
-  
-  ```
+- Run config.py
+    - This creates a r_config.json file for path information in the statistical analysis scripts
+- Run the following scripts/notebooks to generate the figures/analyses/statistics in the manuscript from intermediate data checkpoints
+    - annotation_analysis_and_consensus.ipynb
 
           
 ## Data
