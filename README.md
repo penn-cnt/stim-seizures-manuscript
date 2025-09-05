@@ -17,7 +17,7 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
 9. Penn Statistics in Imaging and Visualization Center, Department of Biostatistics, Epidemiology and Informatics, University of Pennsylvania, Philadelphia, PA 19104, USA
 10. AI2D: Center for AI and Data Science For Integrated Diagnostics, University of Pennsylvania, Philadelphia, PA 19104, USA
 
-### 🧪 Preprint: will be made available upon preprint!
+### 🧪 Preprint: https://doi.org/10.1101/2025.08.29.25334082
 ### 🔬 Manuscript: will be made available upon publication!
 
 ## 🤖 Prerequisites/Dependencies
@@ -69,8 +69,7 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
         - Figure S5
         - Figure S6
     - annotation_analysis_and_consensus.ipynb
-        - Figure S2A
-        - Figure S2B
+        - Figure S2A,B
     - seizure_plotting_sandbox.ipynb
         - Figure 1D,E
         - Figure 2A,B
