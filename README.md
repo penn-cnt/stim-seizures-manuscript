@@ -52,7 +52,7 @@ William K.S. Ojemann [1,2], Caren Armstrong [3,4], Akash Pattnaik [1,2], Nina Pe
   ```r
   install.packages(c("lme4","lmerTest","pbkrtest","dplyr","emmeans","multcomp","car","nlme","jsonlite"))
   ```
-- Download data checkpoints from (link here soon!)
+- Download data checkpoints from https://doi.org/10.26275/toip-zio0
 
 - Update config.py
     - usr - *ieeg.org username*
